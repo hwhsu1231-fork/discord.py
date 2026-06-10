@@ -31,7 +31,7 @@ sys.path.append(os.path.abspath('extensions'))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'builder',
+    # 'builder',
     'sphinx.ext.autodoc',
     'sphinx.ext.extlinks',
     'sphinx.ext.intersphinx',
@@ -107,7 +107,7 @@ branch = 'master' if version.endswith('a') else 'v' + version
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 locale_dirs = ['locale/']
 gettext_compact = False
@@ -176,14 +176,15 @@ html_experimental_html5_writer = True
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'basic'
+html_theme = 'shibuya'
 
 html_context = {
-  'discord_invite': 'https://discord.gg/r3sSKJJ',
-  'discord_extensions': [
-    ('discord.ext.commands', 'ext/commands'),
-    ('discord.ext.tasks', 'ext/tasks'),
-  ],
+  # Edit this page
+  "source_type": "github",
+  "source_user": "Rapptz",
+  "source_repo": "discord.py",
+  "source_version": "master",
+  "source_docs_path": "/docs/",
 }
 
 resource_links = {
@@ -196,8 +197,11 @@ resource_links = {
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-# html_theme_options = {
-# }
+html_theme_options = {
+  'show_ai_links': False,
+  'github_url': 'https://github.com/Rapptz/discord.py',
+  'discord_url': 'https://discord.gg/r3sSKJJ'
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []

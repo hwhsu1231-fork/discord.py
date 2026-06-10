@@ -4,10 +4,17 @@
    contain the root `toctree` directive.
 
 Welcome to discord.py
-===========================
+=====================
 
-.. image:: /images/snake.svg
 .. image:: /images/snake_dark.svg
+   :height: 200
+   :align: center
+   :class: dark-only
+
+.. image:: /images/snake_light.svg
+   :height: 200
+   :align: center
+   :class: light-only
 
 discord.py is a modern, easy to use, feature-rich, and async ready API wrapper
 for Discord.
@@ -21,7 +28,7 @@ for Discord.
 - Optimised for both speed and memory
 
 Getting started
------------------
+---------------
 
 Is this your first time using the library? This is the place to get started!
 
@@ -30,7 +37,7 @@ Is this your first time using the library? This is the place to get started!
 - **Examples:** Many examples are available in the :resource:`repository <examples>`.
 
 Getting help
---------------
+------------
 
 If you're having trouble with something, these resources might help.
 
@@ -41,37 +48,53 @@ If you're having trouble with something, these resources might help.
 - Ask in our :resource:`GitHub discussions page <discussions>`.
 
 Extensions
-------------
+----------
 
 These extensions help you during development when it comes to common tasks.
 
 .. toctree::
+  :caption: Extensions
   :maxdepth: 1
+  :hidden:
 
   ext/commands/index.rst
   ext/tasks/index.rst
 
+- :doc:`ext/commands/index`
+- :doc:`ext/tasks/index`
+
 Manuals
----------
+-------
 
 These pages go into great detail about everything the API can do.
 
 .. toctree::
+  :caption: Manuals
   :maxdepth: 1
+  :hidden:
 
   api
   interactions/api
-  discord.ext.commands API Reference <ext/commands/api.rst>
-  discord.ext.tasks API Reference <ext/tasks/index.rst>
+
+- :doc:`api`
+- :doc:`interactions/api`
 
 Meta
-------
+----
 
 If you're looking for something related to the project itself, it's here.
 
 .. toctree::
+  :caption: Meta
   :maxdepth: 1
+  :hidden:
 
   whats_new
   version_guarantees
-  migrating
+  migrating_to_v2
+  migrating_to_v1
+
+- :doc:`whats_new`
+- :doc:`version_guarantees`
+- :doc:`migrating_to_v2`
+- :doc:`migrating_to_v1`

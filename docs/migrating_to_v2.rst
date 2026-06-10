@@ -1510,8 +1510,3 @@ Tasks Extension Changes
 - Calling :meth:`ext.tasks.Loop.change_interval` now changes the interval for the sleep time right away,
   rather than on the next loop iteration.
 - ``loop`` parameter in :func:`ext.tasks.loop` can no longer be ``None``.
-
-Migrating to v1.0
-======================
-
-The contents of that migration has been moved to :ref:`migrating_1_0`.
